@@ -1,24 +1,45 @@
-# README
+Terminal Commmands
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+$ rails new full-stack-ihop -d postgresql -T
 
-Things you may want to cover:
+$ cd full-stack-ihop
 
-* Ruby version
+$ rails db:create
 
-* System dependencies
+$ git remote add origin https://github.com/learn-academy-2023-bravo/full-stack-rails-i-hop.git this is mine, don't copy it! >
 
-* Configuration
+$ git branch
 
-* Database creation
+$ git checkout -b main
 
-* Database initialization
+$ git status <!-- normally don't want to use all because it's really easy to make mistakes>
 
-* How to run the test suite
+$ git add .
 
-* Services (job queues, cache servers, search engines, etc.)
+$ git status
 
-* Deployment instructions
+$ git commit -m 'initial commit'
 
-* ...
+$ git push origin main
+
+$ bundle add rspec-rails
+
+$ rails g rspec:install
+
+$ rails g model Blog title:string content:string
+
+$ rails db:migrate
+
+$ rails g controller Blog make sure everything is working
+
+$ rails server
+
+navigate to localhost:3000
+
+
+
+✗ rails c  
+
+Blog.create title: 'New Kid On the Blog 1', content: 'Marky Mark'
+Blog.create title: 'New Kid On the Blog 2', content: 'Donnie Wahlberg'
+Blog.all
