@@ -3,4 +3,7 @@
 <h3> <%= @blog.content %> </h3>
 
 <h5> <%= link_to 'Back to Main Page', blogs_path %> </h5>
-    
+
+<h5> <%= link_to 'Update you NKOTBlog', edit_blog_path(@blog)  %> </h5>
+
+<p> <%= button_to 'Delete NKOTBlog...sadness ensues', delete_blog_path(@blog), method: 'delete' %> </p>    

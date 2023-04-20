@@ -1,0 +1,9 @@
+<h2>Edit your NKOTBlog</h2>
+
+<%= form_with model: @blog, method: :patch do |form| %>
+<%= form.label :title %>
+<%= form.text_field :title %>
+<%= form.label :content %>
+<%= form.text_field :content %>
+<%= form.submit "Submit" %>
+<% end %>
